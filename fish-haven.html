@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
-    <title>Fish Haven Page</title>
+    <title>Preston Page</title>
     </head> 
     <body onload="getUpdate(), pancakeD()">
         <div class="container1">
@@ -33,20 +33,20 @@
         <nav class="">
             <ul class="navigation">
                 <li><a class="responsive" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Preston</a></li>
+                <li><a href="https://tabidavid.github.io/lesson-9/">Home</a></li>
+                <li><a href="https://tabidavid.github.io/lesson-10/preston-10.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li>
-                <li><a href="#">Storm Center</a></li>
-                <li><a href="#">Gallery</a></li>
+                <li><a href="https://tabidavid.github.io/lesson-8/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://tabidavid.github.io/lesson-7/gallery.html">Gallery</a></li>
             </ul>
 
         </nav>
         
         <main>
-            <h2>Fish Haven Town</h2>
+            <h2>Fish Haven</h2>
             <div class="herodiv">
-                  <img src="img/landscape.jpg" alt="landscape">
+                  <img id="landscape" src="img/landscape.jpg" alt="landscape">
               
                     <section id="weathersummary" class="stats">
                         <h2>Weather Summary</h2>
@@ -56,61 +56,56 @@
                         <p>Humidity: <span id="humidity"></span></p>
                         <p>Wind Speed: <span id="wind-speed"></span></p>
                       </section>
-
-                <section class="forecast">
-                    <h3 id="fiveDayBanner">5 Day Forecast</h3>
-                    <div class="allboxes">
-                      <div class="box" id="day1">
-                        <span class="label">Wed</span>
-                        <span class="icon">☀️</span>
-                        <span class="detail">56 F</span>
-                      </div>
-                      <div class="box" id="day2">
-                        <span class="label">Thu</span>
-                        <span class="icon">☀️</span>
-                        <span class="detail">56 F</span>
-                      </div>
-                      <div class="box" id="day3">
-                        <span class="label">Fri</span>
-                        <span class="icon">☀️</span>
-                        <span class="detail">56 F</span>
-                      </div>
-                      <div class="box" id="day4">
-                        <span class="label">Sat</span>
-                        <span class="icon">☀️</span>
-                        <span class="detail">56 F</span>
-                      </div>
-                      <div class="box" id="day5">
-                        <span class="label">Sun</span>
-                        <span class="icon">☀️</span>
-                        <span class="detail">56 F</span>
-                      </div>
-                      </div>
-                      </section>
-
-                      
-                      <section class="article">
-                       
-                          <img src="img/woman.jpg" alt="Women sitting">
-                          <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam congue tortor eget pulvinar lobortis.
-                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam ac dolor augue.
-                            Pellentesque mi mi, laoreet et dolor sit amet, ultrices varius risus. Nam vitae iaculis elit. Aliquam mollis interdum libero. Sed sodales placerat egestas. Vestibulum ut arcu aliquam purus viverra dictum vel sit amet mi.
-                            Duis nisl mauris, aliquam sit amet luctus eget, dapibus in enim. Sed velit augue, pretium a sem aliquam, congue porttitor tortor.
-                            Sed tempor nisl a lorem consequat, id maximus erat aliquet. Sed sagittis porta libero sed condimentum.
-                            Aliquam finibus lectus nec ante congue rutrum. Curabitur quam quam, accumsan id ultrices ultrices, tempor et tell us.
-                        </p>
-                      </section>
-                      
-                      <section class="contact">
-                    
-                        <p class="info">Contact Information<br>
-                                Name: David Tabi<br>
-                                Email: todayweather.live <br>
-                                Phone : 593-455-5433<br>
-                        </p>
-                            <img src="img/map.jpg" class = "map" alt="A map of preston">
-                      </section>
             </div>
+
+            <div>
+              <h3 id="h3">5 Day Forecast</h3>
+            </div>
+            <div class="forecast">
+                <div class="allboxes">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th id="day1">day1</th>
+                          <th id="day2">day2</th>
+                          <th id="day3">day3</th>
+                          <th id="day4">day4</th>
+                          <th id="day5">day5</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <img id="icon1" class="img1"/><span
+                              id="forecast1"
+                            ></span>
+                          </td>
+                          <td>
+                            <img id="icon2" class="img1"/><span
+                              id="forecast2"
+                            ></span>
+                          </td>
+                          <td>
+                            <img id="icon3" class="img1"/><span
+                              id="forecast3"
+                            ></span>
+                          </td>
+                          <td>
+                            <img id="icon4"  class="img1"/><span
+                              id="forecast4"
+                            ></span>
+                          </td>
+                          <td>
+                            <img id="icon5" class="img1"/><span
+                              id="forecast5"
+                            ></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+            
         </main>
         
         <footer>
