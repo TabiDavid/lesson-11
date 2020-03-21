@@ -100,7 +100,7 @@ nav {
 main{
     background-color: rgb(139, 167, 218);
     padding: 8px;
-    width: 900px;
+    width: 80%;
     margin: auto;
     
     }
@@ -113,6 +113,7 @@ main{
     .herodiv{
         margin: 0 auto;
         position: relative;
+        text-align: center;
     
     }
     #landscape {
@@ -123,7 +124,7 @@ main{
     #weathersummary{
         position: absolute;
         top: 50px;
-        left: 50px;
+        left: 15%;
         background:radial-gradient(brown, lightblue);
         padding: .5rem;
         
@@ -139,7 +140,7 @@ main{
 
     .box {
         border: 10px;
-        max-width: 890px;
+        width: 100%;
         margin: auto;
         text-align: center;
     }
@@ -152,7 +153,7 @@ main{
     }
     
     #women, #map {
-        width: 300px;
+        width: 250px;
         height: 300px;
 
     }
